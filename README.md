@@ -123,7 +123,6 @@ The actions are triggered by a `git push` to the `main` branch.
     pip install mkdocs-git-revision-date-localized-plugin
     pip install mkdocs-link-marker
     pip install mkdocs-exclude
-    pip install markdown-captions
     ```
 
 1. Build documentation
