@@ -97,6 +97,7 @@ markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/ex
       toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.blocks.caption
   - pymdownx.blocks.tab:
       alternate_style: true
       combine_header_slug: true

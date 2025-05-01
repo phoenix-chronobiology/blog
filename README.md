@@ -54,7 +54,7 @@ docs/
 
 ### Markdown Frontmatter
 
-The Blog plugin uses markdown frontmatter to generate views of the blog posts. Views are pages that are automatically generated, i.e., the entry point to your blog listing all latest posts, as well as archive and category pages that list all posts associated with them through metadata in chronological order.
+The site uses the [blog plug-in built into Material for MkDocs](https://squidfunk.github.io/mkdocs-material/plugins/blog/). The plugin uses markdown frontmatter to generate views of the blog posts. Views are pages that are automatically generated, i.e., the entry point to your blog listing all latest posts, as well as archive and category pages that list all posts associated with them through metadata in chronological order.
 
 ```
 ---
