@@ -1,0 +1,14 @@
+{
+  "name": "phoenix-biorhythm-platform-blog",
+  "version": "1.0.0",
+  "description": "A platform for the analysis of chronobiological metrics.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,27 @@
+/* Definition lists */
+dt {
+    font-weight: bold;
+}
+
+/* Nested unordered lists */
+.md-typeset ul {
+    list-style-type: disc;
+}
+
+.md-typeset li ul {
+    list-style-type: circle;
+}
+
+.md-typeset li ul li ul {
+    list-style-type: square;
+}
+
+.md-typeset ul li ol {
+    list-style-type: decimal;
+}
+
+.thumbnail-right {
+    width: 33%;
+    padding: 0em 0em 2em 2em;
+    float: right;
+}

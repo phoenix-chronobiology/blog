@@ -1,0 +1,122 @@
+# PROJECT INFORMATION
+site_name: !ENV [SITE_NAME, 'The Phoenix Chronobiology Project Blog']
+site_author: Christopher Adams
+
+repo_url: https://github.com/phoenix-chronobiology/blog/
+
+edit_uri: null
+
+copyright: <p xmlns:cc="http://creativecommons.org/ns#" ><a rel="cc:attributionURL" href="https://phoenix-chronobiology.github.io/">This work</a> &copy; 2025 by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/phoenix-chronobiology" target="_blank">CHRISTOPHER ADAMS</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"> &boxbox;</a></p>
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.footer
+    - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.progress
+    - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  locale: en
+  font:
+    text: Cabin
+    code: Ubuntu Mono
+  favicon: images/circadian-rhythms-32x32.png
+  logo: images/phoenix-mark-white.png
+
+plugins:
+  - blog:
+      blog_dir: .
+  - exclude:
+      glob:
+        - "*.drawio"
+  - git-revision-date-localized:
+      type: custom
+      custom_format: "%Y-%m-%d %H:%M:%S%z (%Z)"
+      locale: en
+      timezone: US/Central 
+  - link-marker
+  - macros
+  - privacy:
+      enabled: !ENV [CI, false]   # needs to be enabled at some point
+  - search
+  - tags
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/typeset.css
+
+# FORMATTING OPTIONS
+markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/extensions/
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.md_in_html
+  - markdown.extensions.meta
+  - markdown.extensions.tables
+  - markdown.extensions.toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.blocks.tab:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: false
+      clickable_checkbox: false
+  - pymdownx.tilde
+
+# ----------
+# NO NAV
+# ----------
