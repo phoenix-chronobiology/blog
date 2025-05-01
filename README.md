@@ -42,36 +42,36 @@ For full documentation, visit [mkdocs.org](https://www.mkdocs.org).
 mkdocs.yml              # The configuration file
 docs/
     index.md            # The documentation homepage
-    about/
-        index.md
-        ...
-    abpm/               # ambulatory blood pressure monitor project
-        index.md
-        ...
-    biorhythm-platform/ # biorhythm analysis platform project
-        index.md
-        architecture/
-            index.md
-            ...
-        requirements/
-            index.md
-            ...
+    posts/              # blog posts
     images/
     javascripts/
-    library/
-        index.md
-        ...
-    privacy-security/
-        index.md
-        ...
-    snippets/
     stylesheets/
-    glossary.md
     ...                 # Other markdown pages and other files
 ```
 ### Theme
 
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material)
+
+### Markdown Frontmatter
+
+The Blog plugin uses markdown frontmatter to generate views of the blog posts. Views are pages that are automatically generated, i.e., the entry point to your blog listing all latest posts, as well as archive and category pages that list all posts associated with them through metadata in chronological order.
+
+```
+---
+date:
+  created: 2024-04-24
+  updated: 2024-10-15
+categories:
+  - Meeting Minutes
+---
+
+# Hot topic!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.
+```
+
+See [Material for MkDocs &rarr; plugins &rarr; blog](https://squidfunk.github.io/mkdocs-material/plugins/blog/#usage).
 
 ## Building the site
 
