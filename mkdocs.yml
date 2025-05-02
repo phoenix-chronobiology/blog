@@ -1,5 +1,5 @@
 # PROJECT INFORMATION
-site_name: !ENV [SITE_NAME, 'The Phoenix Chronobiology Project Blog']
+site_name: Phoenix Blog
 site_author: Christopher Adams
 
 repo_url: https://github.com/phoenix-chronobiology/blog/
@@ -114,7 +114,11 @@ markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/ex
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: false
