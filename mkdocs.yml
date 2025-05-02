@@ -1,8 +1,14 @@
+# ------------------------------
 # PROJECT INFORMATION
+# ------------------------------
 site_name: Phoenix Blog
 site_author: Christopher Adams
 
 repo_url: https://github.com/phoenix-chronobiology/blog/
+
+# ------------------------------
+# COMMON MKDOCS CONFIG
+# ------------------------------
 
 edit_uri: null
 
@@ -10,7 +16,7 @@ copyright: <p xmlns:cc="http://creativecommons.org/ns#" ><a rel="cc:attributionU
 
 theme:
   name: material
-  custom_dir: overrides
+
   features:
     - content.code.copy
     - navigation.expand
@@ -19,11 +25,12 @@ theme:
     # - navigation.instant
     # - navigation.instant.progress
     - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - toc.follow
+
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -53,12 +60,12 @@ theme:
   font:
     text: Cabin
     code: Ubuntu Mono
+
+  custom_dir: overrides
   favicon: images/circadian-rhythms-32x32.png
   logo: images/phoenix-mark-white.png
 
 plugins:
-  - blog:
-      blog_dir: .
   - exclude:
       glob:
         - "*.drawio"
@@ -79,18 +86,19 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
+  - stylesheets/hero-image.css
   - stylesheets/typeset.css
 
 # FORMATTING OPTIONS
 markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/extensions/
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - meta
-  - tables
-  - toc:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.md_in_html
+  - markdown.extensions.meta
+  - markdown.extensions.tables
+  - markdown.extensions.toc:
       permalink: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
@@ -110,7 +118,8 @@ markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/ex
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      use_pygments: true
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
@@ -124,6 +133,6 @@ markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/ex
       clickable_checkbox: false
   - pymdownx.tilde
 
-# ----------
-# NO NAV
-# ----------
+# ------------------------------
+# DOCUMENTATION LAYOUT -- NO NAV
+# ------------------------------
