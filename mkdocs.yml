@@ -23,6 +23,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
+    # - navigation.instant.prefetch
     # - navigation.instant.progress
     - navigation.sections
     - navigation.tabs
@@ -134,5 +135,18 @@ markdown_extensions:  # see https://squidfunk.github.io/mkdocs-material/setup/ex
   - pymdownx.tilde
 
 # ------------------------------
-# DOCUMENTATION LAYOUT -- NO NAV
+# DOCUMENTATION LAYOUT
 # ------------------------------
+nav:
+  - The Phoenix Chronobiology Projects: https://phoenix-chronobiology.github.io/
+  - ABPM: https://phoenix-chronobiology.github.io/abpm/
+  - Algorithms: https://phoenix-chronobiology.github.io/algorithms/
+  - Biorhythm Platform: https://phoenix-chronobiology.github.io/biorhythm-platform/
+  - Library: https://phoenix-chronobiology.github.io/library/
+  - Glossary: https://phoenix-chronobiology.github.io/glossary/
+  - Blog:
+      - Blog: index.md
+  - About the site: https://phoenix-chronobiology.github.io/about/
+
+not_in_nav:
+  posts/
