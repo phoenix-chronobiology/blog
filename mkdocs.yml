@@ -67,6 +67,8 @@ theme:
   logo: images/phoenix-mark-white.png
 
 plugins:
+  - blog:
+      blog_dir: .
   - exclude:
       glob:
         - "*.drawio"
