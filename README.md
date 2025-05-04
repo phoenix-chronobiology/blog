@@ -21,6 +21,8 @@ The Halberg Chronobiology Center wants the monitor and analytic framework for lo
 
 This repository hosts the Projects' blog, which is published on GitHub Pages. The site is an online journal of activities within [The&nbsp;Phoenix&nbsp;Chronobiology&nbsp;Projects](https://phoenix-chronobiology.github.io/index.md). The content comprises minutes of project meetings, and announcements of events that have occurred or are planned to shortly occur.
 
+This repository is built as a subproject/subcomponent of [The&nbsp;Phoenix&nbsp;Chronobiology&nbsp;Projects](https://phoenix-chronobiology.github.io/) site.
+
 ### Static site generator
 
 **MkDocs** is a static site generator that is geared toward building project documentation. Source files are written primarily in [Markdown](https://www.markdownguide.org), and configured with a single YAML configuration file
@@ -52,9 +54,9 @@ docs/
 
 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material)
 
-### Markdown Frontmatter
+### Markdown Front-Matter
 
-The site uses the [blog plug-in built into Material for MkDocs](https://squidfunk.github.io/mkdocs-material/plugins/blog/). The plugin uses markdown frontmatter to generate views of the blog posts. Views are pages that are automatically generated, i.e., the entry point to your blog listing all latest posts, as well as archive and category pages that list all posts associated with them through metadata in chronological order.
+The site uses the [blog plug-in built into Material for MkDocs](https://squidfunk.github.io/mkdocs-material/plugins/blog/). The plugin uses markdown front-matter to generate views of the blog posts. Views are pages that are automatically generated, i.e., the entry point to your blog listing all latest posts, as well as archive and category pages that list all posts associated with them through metadata in chronological order.
 
 ```
 ---
