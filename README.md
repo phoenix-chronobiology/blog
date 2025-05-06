@@ -1,5 +1,7 @@
 # Blog &mdash; The Phoenix Chronobiology Projects
 
+> :warning: This repository/site is no longer active. It's content has been incorporated into the parent site, [The&nbsp;Phoenix&nbsp;Chronobiology&nbsp;Projects](https://phoenix-chronobiology.github.io/), under the [Reading&nbsp;Room](https://phoenix-chronobiology.github.io/reading-room/) menu item.
+
 ## Overview
 
 **The Phoenix Chronobiology Projects**:
